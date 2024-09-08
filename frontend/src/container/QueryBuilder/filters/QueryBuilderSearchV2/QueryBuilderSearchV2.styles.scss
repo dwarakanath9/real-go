@@ -259,3 +259,14 @@
 		}
 	}
 }
+.lightMode {
+	.qb-search-bar-tokenised-tags {
+		.ant-tag {
+			background: var(--bg-vanilla-300);
+			border-color: var(--bg-vanilla-300);
+			.ant-typography {
+				color: var(--bg-ink-100);
+			}
+		}
+	}
+}
