@@ -42,7 +42,6 @@ export const getListColumns = (
 			},
 			sorter: true,
 			sortOrder: (orderByFromQuery || [])?.map((order) => {
-				console.log(order);
 				if (order.columnName === 'timestamp') {
 					return order.order === 'asc' ? 'ascend' : 'descend';
 				}
@@ -82,7 +81,6 @@ export const getListColumns = (
 			sortOrder:
 				key === 'durationNano'
 					? (orderByFromQuery || [])?.map((order) => {
-							console.log(order);
 							if (order.columnName === 'durationNano') {
 								return order.order === 'asc' ? 'ascend' : 'descend';
 							}
