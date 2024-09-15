@@ -1,6 +1,8 @@
 package server
 
 import (
+	"fmt"
+
 	"go.signoz.io/signoz/pkg/confmap"
 )
 
@@ -24,4 +26,8 @@ func (c *Config) NewWithDefaults() confmap.Config {
 
 func (c *Config) Validate() error {
 	return nil
+}
+
+func test() {
+	fmt.Println("this is testing")
 }
